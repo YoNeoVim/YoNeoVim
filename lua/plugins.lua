@@ -20,7 +20,13 @@ return packer.startup(
     use { 
       'marko-cerovac/material.nvim',
       config = function ()
-        require('material').set()
+        -- require('material').set()
+      end
+    }
+    use {
+      'folke/tokyonight.nvim',
+      config = function ()
+        vim.cmd[[colorscheme tokyonight]]
       end
     }
     use {
@@ -45,7 +51,7 @@ return packer.startup(
      config = function ()
         require "lualine".setup {
           options = {
-            theme = 'ayu_mirage'
+            theme = 'tokyonight'
           }
         }
       end

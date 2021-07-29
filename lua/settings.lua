@@ -5,7 +5,11 @@ local key_mapper = require("core.keymap")
 vim.g.mapleader = ' '
 
 -- Set theme
-vim.g.material_style = 'darker'
+vim.g.tokyonight_style = "night"
+-- vim.o.background = "light"
+vim.g.tokyonight_transparent = true 
+
+-- vim.g.material_style = 'darker'
 
 option.termguicolors = true
 option.syntax = 'on'
