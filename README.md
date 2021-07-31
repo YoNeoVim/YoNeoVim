@@ -57,7 +57,6 @@ So, what I wanted was the experience of **Doom Emacs** in **Neovim** and this wa
 ## License 
 Additons in this repo are under GNU GPLv3
 
-<br />
 <div align="center">
   <img style="margin-top: 8px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
 </div>
