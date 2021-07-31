@@ -4,7 +4,8 @@
   <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
 </div>
 
-<br />
+> Neovim like an IDE 
+
 <div align="center">
   <a href="https://iyaksha.github.io/YoNeo">Getting Started</a>
   <span> • </span>
@@ -12,9 +13,6 @@
   <span> • </span>
   <a href="https://github.com/IYaksha/YoNeo#motivation">Features</a>
 </div>
-<br />
-
-> Neovim like an IDE 
 
 <br />
 <div align="center">
