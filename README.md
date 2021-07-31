@@ -1,4 +1,4 @@
-<h1 align="center">YoNeo</h1> 
+<h2 align="center">YoNeo</h2> 
 
 <div align="center">
   <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-  <img style="margin-top: 4px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
+  <img style="margin-top: 8px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
 </div>
 
 ## Motivation
