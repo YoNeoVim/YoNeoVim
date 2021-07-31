@@ -1,4 +1,4 @@
-<h1 align="center">YoNeo</div> 
+<h1 align="center">YoNeo</h1> 
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
