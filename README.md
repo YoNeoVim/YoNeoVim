@@ -5,7 +5,6 @@
 </div>
 
 <div align="center">Neovim like an IDE</div>
-<br />
 
 <div align="center">
   <a href="https://iyaksha.github.io/YoNeo">Getting Started</a>
