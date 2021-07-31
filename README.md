@@ -1,11 +1,11 @@
 <h1 align="center">YoNeo</h1> 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
+  Neovim like an IDE
 </div>
 
 <div align="center">
-  <img alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
+  <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
 </div>
 
 <div align="center">
@@ -16,7 +16,9 @@
   <a href="https://github.com/IYaksha/YoNeo#motivation">Features</a>
 </div>
 
-Neovim configuration with sane defaults written in Lua. 
+<div align="center">
+  <img style="margin-top: 4px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
+</div>
 
 ## Motivation
 **YoNeo** is basically a neovim configuration written in Lua.
