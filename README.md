@@ -1,7 +1,8 @@
 ## YoNeo 
 
-Neovim configuration with good defaults written in Lua.
-[Click Here](https://github.com/iyaksha/yoneo) to get started.
+Neovim configuration with good defaults written in Lua. 
+
+[Click Here](https://iyaksha.github.io/YoNeo) to get started.
 
 ## Motivation
 **YoNeo** is basically a neovim configuration written in Lua.
