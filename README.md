@@ -4,7 +4,7 @@
   <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
 </div>
 
-<h5 align="center">Neovim like an IDE</h5>
+<div align="center">Neovim like an IDE</div>
 
 <div align="center">
   <a href="https://iyaksha.github.io/YoNeo">Getting Started</a>
