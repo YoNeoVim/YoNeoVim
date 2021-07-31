@@ -83,21 +83,6 @@ vim.fn.sign_define('LspDiagnosticsSignError', { text = "", texthl = "LspDiagn
 vim.fn.sign_define('LspDiagnosticsSignWarning', { text = "", texthl = "LspDiagnosticsDefaultWarning" })
 vim.fn.sign_define('LspDiagnosticsSignInformation', { text = "", texthl = "LspDiagnosticsDefaultInformation" })
 
--- Use a loop to conveniently call 'setup' on multiple servers and
--- map buffer local keybindings when the language server attaches
-local servers = { 
-  "pyright", 
-  "rust_analyzer", 
-  "bashls"
-}
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilties,
-    flags = flags,
-  }
-end
-
 -- JS/TS lsp configuration
 require("null-ls").config {}
 require("lspconfig")["null-ls"].setup {}
@@ -157,56 +142,55 @@ nvim_lsp.tsserver.setup {
 }
 
 -- Lua lsp configuration
-local lua_sumneko_root_path = vim.fn.getenv("HOME") .. "/.local/share/nvim/lspinstall/lua/sumneko-lua"
-local lua_sumneko_bin = vim.fn.getenv("HOME") .. "/.local/share/nvim/lspinstall/lua/sumneko-lua-language-server"
+local system_name = "Linux"
 
-nvim_lsp.lua_lsp = {
-  cmd = { lua_sumneko_bin, '-E', lua_sumneko_root_path .. '/main.lua' },
-  on_attach = on_attach,
-  capabilities = capabilties,
-  flags = flags,
-  Lua = {
-    runtime = {
-      version = 'LuaJIT',
-      path = runtime_path,
-    },
-    diagnostics = {
-      globals = { 'vim' },
-    },
-    workspace = {
-      library = vim.api.nvim_get_runtime_file('', true),
-    },
-    telemetry = {
-      enable = false,
-    },
-  },
-}
+local sumneko_root_path = vim.fn.stdpath('cache')..'/lspconfig/sumneko_lua/lua-language-server'
+local sumneko_binary = sumneko_root_path.."/bin/"..system_name.."/lua-language-server"
 
--- YAML lsp configuration
-nvim_lsp.yaml_lsp = {
-  cmd = { "yaml-language-server", "--stdio" },
-  on_attach = on_attach,
-  capabilties = capabilities,
-  flags = flags,
-}
+local runtime_path = vim.split(package.path, ';')
+table.insert(runtime_path, "lua/?.lua")
+table.insert(runtime_path, "lua/?/init.lua")
 
--- CSS lsp configuration
-require "lspconfig".cssls.setup(
-  {
-    cmd = {"vscode-css-language-server", "--stdio"},
-    capabilities = capabilities,
-    settings = {
-      scss = {
-        lint = {
-          idSelector = "warning",
-          zeroUnits = "warning",
-          duplicateProperties = "warning"
-        },
-        completion = {
-          completePropertyWithSemicolon = true,
-          triggerPropertyValueCompletion = true
-        }
-      }
-    }
+nvim_lsp.sumneko_lua.setup {
+  cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'LuaJIT',
+        path = runtime_path,
+      },
+      diagnostics = {
+        globals = { 'vim' },
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file('', true),
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
   }
-)
+}
+
+-- Use a loop to conveniently call 'setup' on multiple servers and
+-- map buffer local keybindings when the language server attaches
+local servers = { 
+  "pyright", 
+  "rust_analyzer", 
+  "bashls",
+  "tailwindcss",
+  "yamlls",
+  "html",
+  "cssls",
+  "jsonls",
+  "dockerls",
+  "graphql",
+}
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilties,
+    flags = flags,
+  }
+end
+
