@@ -4,7 +4,8 @@
   <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
 </div>
 
-> <div align="center">Neovim like an IDE</div>
+<div align="center">Neovim like an IDE</div>
+<br />
 
 <div align="center">
   <a href="https://iyaksha.github.io/YoNeo">Getting Started</a>
@@ -14,9 +15,9 @@
   <a href="https://github.com/IYaksha/YoNeo#motivation">Features</a>
 </div>
 
-<div align="center">
-  <img style="margin-top: 8px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
-</div>
+
+
+
 
 ## Motivation
 **YoNeo** is basically a neovim configuration written in Lua.
@@ -55,3 +56,9 @@ So, what I wanted was the experience of **Doom Emacs** in **Neovim** and this wa
 
 ## License 
 Additons in this repo are under GNU GPLv3
+
+<br />
+<div align="center">
+  <img style="margin-top: 8px;" alt="Made with love in Lua" src="https://img.shields.io/badge/Made%20%F0%9F%A4%8D%20Lua-blueviolet.svg?style=for-the-badge" />
+</div>
+
