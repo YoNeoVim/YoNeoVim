@@ -1,18 +1,14 @@
 <h1 align="center">YoNeo</h1> 
 
 <div align="center">
-  Neovim like an IDE
-</div>
-
-<div align="center">
   <img style="margin-bottom: 8px; margin-top: 8px;" src="https://raw.githubusercontent.com/IYaksha/YoNeo/master/screenshots/neovim-screenshot.png">
 </div>
 
 <div align="center">
   <a href="https://iyaksha.github.io/YoNeo">Getting Started</a>
-  •
+  <span> • </span>
   <a href="https://github.com/IYaksha/YoNeo#motivation">Motivation</a>
-  •
+  <span> • </span>
   <a href="https://github.com/IYaksha/YoNeo#motivation">Features</a>
 </div>
 
