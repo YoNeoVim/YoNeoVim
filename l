@@ -201,6 +201,7 @@ local servers = {
   "jsonls",
   "dockerls",
   "graphql",
+  "gopls"
 }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
