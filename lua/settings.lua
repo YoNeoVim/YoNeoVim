@@ -5,9 +5,9 @@ local key_mapper = require("core.keymap")
 vim.g.mapleader = ' '
 
 -- Set theme
-vim.g.tokyonight_style = "night"
+-- vim.g.tokyonight_style = "night"
 -- vim.o.background = "light"
-vim.g.tokyonight_transparent = true 
+-- vim.g.tokyonight_transparent = true 
 
 -- vim.g.material_style = 'darker'
 

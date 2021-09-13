@@ -17,16 +17,10 @@ return packer.startup(
     }
     
     -- UI Customizations 
-    use { 
-      'marko-cerovac/material.nvim',
-      config = function ()
-        -- require('material').set()
-      end
-    }
     use {
-      'folke/tokyonight.nvim',
+      'arcticicestudio/nord-vim',
       config = function ()
-        vim.cmd[[colorscheme tokyonight]]
+        vim.cmd[[colorscheme nord]]
       end
     }
     use {
@@ -48,10 +42,10 @@ return packer.startup(
     }
     use {
       'hoob3rt/lualine.nvim',
-     config = function ()
+       config = function ()
         require "lualine".setup {
           options = {
-            theme = 'tokyonight'
+            theme = 'nord'
           }
         }
       end
@@ -83,14 +77,6 @@ return packer.startup(
         require "hop".setup()
       end
     } 
-    use { 
-      "wfxr/minimap.vim",
-      run = 'cargo install --locked code-minimap',
-      config = function ()
-        require "plugins.minimap"
-      end
-    }
-    use { "lukas-reineke/indent-blankline.nvim" }
     use { "ekickx/clipboard-image.nvim"}
     
     -- Fuzzy finding
@@ -113,7 +99,6 @@ return packer.startup(
       "nvim-telescope/telescope-media-files.nvim",
       cmd = "Telescope"
     }
-    use { 'jremmen/vim-ripgrep' }
 
     -- Telescope extensions
     use { 
