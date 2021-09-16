@@ -9,10 +9,17 @@ We are using [Sumneko Lua](https://github.com/sumneko/lua-language-server) for c
 - Clone sumneko/lua-language-server
 ```bash
 cd ~/.cache/nvim
-mkdir lspconfig
+mkdir -p lspconfig/sumneko_lua
+cd lspconfig/sumneko_lua
 git clone https://github.com/sumneko/lua-language-server
 cd lua-language-server
 git submodule update --init --recursive
+```
+
+- Install prerequisities for building lua-language-server
+```bash
+# For Fedora
+sudo dnf install meson libstdc++-static
 ```
 
 - Build lua-language-server
