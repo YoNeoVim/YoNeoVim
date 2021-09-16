@@ -15,29 +15,12 @@ return packer.startup(
         require'nvim-web-devicons'.has_loaded()
       end
     }
-    
-    -- UI Customizations 
+
+    -- UI Customizations
     use {
       'arcticicestudio/nord-vim',
       config = function ()
         vim.cmd[[colorscheme nord]]
-      end
-    }
-    use {
-      'akinsho/nvim-bufferline.lua',
-      config = function ()
-        require("bufferline").setup{
-          options = {
-            diagnostics = "nvim_lsp",
-            show_buffer_icons = true,
-            offsets = {{
-              filetype = "NvimTree",
-              text = "File Explorer",
-              text_align = "center"
-            }}
-          }
-        }
-        require "plugins.bufferline"
       end
     }
     use {
@@ -50,8 +33,8 @@ return packer.startup(
         }
       end
     }
-    use { 
-      "glepnir/dashboard-nvim", 
+    use {
+      "glepnir/dashboard-nvim",
       config = function ()
         require "plugins.dashboard"
       end
@@ -64,7 +47,7 @@ return packer.startup(
     }
 
     -- Essentials
-    use {  
+    use {
       "folke/which-key.nvim",
       config = function ()
         require "which-key".setup {}
